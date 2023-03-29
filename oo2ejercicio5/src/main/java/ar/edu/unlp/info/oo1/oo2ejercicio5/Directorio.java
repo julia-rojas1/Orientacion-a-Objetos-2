@@ -14,7 +14,17 @@ public class Directorio extends FileSystem {
 	
 	public int tamanoTotalOcupado() {
 		return contenido.stream()
-				.mapToInt(a -> a.tamanoTotalOcupado)
+				.mapToInt(a -> a.tamanoTotalOcupado())
 				.sum();
+	}
+	
+	public FileSystem getFileSys(int n) {
+		return contenido.get(n);
+	}
+	
+	public Archivo archivoMasGrande() {
+		return contenido.stream() 
+				.max((f1,f2) -> Integer.compare(f1., 0) 
+				
 	}
 }

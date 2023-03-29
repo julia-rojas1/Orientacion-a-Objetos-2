@@ -12,4 +12,5 @@ public abstract class FileSystem {
 	}
 	
 	public abstract int tamanoTotalOcupado();
+	public abstract FileSystem getFileSys(int n);
 }

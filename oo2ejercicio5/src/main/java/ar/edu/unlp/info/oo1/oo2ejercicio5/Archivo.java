@@ -13,4 +13,8 @@ public class Archivo extends FileSystem {
 	public int tamanoTotalOcupado() {
 		return bytes;
 	}
+	
+	public FileSystem getFileSys(int n) {
+		return this;
+	}
 }
