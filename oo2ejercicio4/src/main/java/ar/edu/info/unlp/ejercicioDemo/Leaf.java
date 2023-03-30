@@ -21,7 +21,7 @@ public class Leaf extends Topografia {
 		return this;
 	}
 	
-	public boolean comparar (Topografia topo) {
+	public boolean equals (Topografia topo) {
 		if ((this.calcularAgua() == topo.calcularAgua())&&(this.calcularTierra() == topo.calcularTierra())) {
 			return true;
 		}
