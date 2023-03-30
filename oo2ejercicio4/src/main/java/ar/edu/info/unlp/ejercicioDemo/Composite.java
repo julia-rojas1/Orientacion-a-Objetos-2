@@ -23,17 +23,19 @@ public class Composite extends Topografia {
 		return partes[n];
 	}
 	
-	
-	public boolean comparar (Topografia topo) {
-		//it iterates over both lists, comparing corresponding pairs of elements
+	public boolean compararMixta (Composite mixta) {
 		for (int i=0; i<4; i++) {
 			if (!partes[i].comparar(topo.getParte(i))) {
 				return false;
 			}
-		}
-		return true;			
+		return true;	
+	}
+	
+	public boolean comparar (Topografia topo) {
 		
-		//Me falto chequear: if the specified object is also a list (composite).
+		return topo.compararMixta (this);		
+		
+		
 	}
 	
 	
