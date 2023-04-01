@@ -16,6 +16,7 @@ public abstract class FileSystem {
 	public int getBytes() {
 		return this.bytes;
 	}
+	
 	public String getNombre() {
 		return this.nombre;
 	}
