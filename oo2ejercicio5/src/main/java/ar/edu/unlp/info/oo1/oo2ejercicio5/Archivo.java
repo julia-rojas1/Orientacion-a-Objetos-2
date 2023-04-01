@@ -11,7 +11,7 @@ public class Archivo extends FileSystem {
 	public int tamanoTotalOcupado() {
 		return getBytes();
 	}
-	
+
 	public Archivo archivoMasGrande() {
 		return this;
 	}

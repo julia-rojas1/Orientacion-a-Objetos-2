@@ -36,7 +36,7 @@ public class Directorio extends FileSystem {
 		return contenido.stream()
 				.map(a -> a.archivoMasNuevo())
 				.max((a1,a2)-> a1.getFecha().compareTo(a2.getFecha()))
-				.get();
+				.orElse(null);
 	}
 	
 	
