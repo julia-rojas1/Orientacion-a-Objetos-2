@@ -16,10 +16,6 @@ public class Archivo extends FileSystem {
 		return getBytes();
 	}
 	
-	public FileSystem getFileSys(int n) {
-		return this;
-	}
-	
 	public Archivo archivoMasGrande() {
 		return this;
 	}
