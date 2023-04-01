@@ -3,18 +3,28 @@ package ar.edu.unlp.info.oo1.oo2ejercicio5;
 import java.time.LocalDate;
 
 public class Archivo extends FileSystem {
-	private int bytes;
 	
 	public Archivo(String nombre, LocalDate fecha, int tamano) {
-		super(nombre,fecha);
-		this.bytes = tamano;
+		super(nombre,fecha,tamano);
 	}
 	
 	public int tamanoTotalOcupado() {
-		return bytes;
+		return getBytes();
+	}
+	
+	public int tamanoOcupado() {
+		return getBytes();
 	}
 	
 	public FileSystem getFileSys(int n) {
+		return this;
+	}
+	
+	public Archivo archivoMasGrande() {
+		return this;
+	}
+	
+	public Archivo archivoMasNuevo() {
 		return this;
 	}
 }
