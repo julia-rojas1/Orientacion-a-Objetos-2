@@ -25,9 +25,7 @@ public class Directorio extends FileSystem {
 				.sum();
 	}
 	
-	
-	
-	
+
 	
 	public Archivo archivoMasGrande() {
 		return contenido.stream()
@@ -35,6 +33,7 @@ public class Directorio extends FileSystem {
 				.max((a1,a2)-> Integer.compare(a1.getBytes(), a2.getBytes()))
 				.orElse(null);
 	}
+	
 	
 	public Archivo archivoMasNuevo() {
 		return contenido.stream()
