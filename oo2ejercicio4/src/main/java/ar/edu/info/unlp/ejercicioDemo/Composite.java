@@ -23,20 +23,20 @@ public class Composite extends Topografia {
 		return partes[n];
 	}
 	
-	public boolean compararMixta (Composite mixta) {
+	/*public boolean compararMixta (Composite mixta) {
 		for (int i=0; i<4; i++) {
 			if (!partes[i].comparar(topo.getParte(i))) {
 				return false;
 			}
 		return true;	
-	}
+	}*/
 	
-	public boolean comparar (Topografia topo) {
+	/*public boolean comparar (Topografia topo) {
 		
 		return topo.compararMixta (this);		
 		
 		
-	}
+	}*/
 	
 	
 }

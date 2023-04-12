@@ -4,4 +4,5 @@ public abstract class Estado {
 	public abstract Estado start();
 	public abstract Estado togglePause();
 	public abstract Estado finish();
+	
 }

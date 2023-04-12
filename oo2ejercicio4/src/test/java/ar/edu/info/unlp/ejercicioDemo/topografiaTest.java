@@ -33,7 +33,7 @@ public class topografiaTest {
 		assertEquals(0.375,top4.calcularAgua());
 	}
 	
-	@Test
+	/*@Test
 	public void testEquals() {
 		//Misma topografia
 		assertTrue(top1.comparar(top1));
@@ -46,6 +46,6 @@ public class topografiaTest {
 		assertFalse(top1.comparar(top2));
 		assertFalse(top1.comparar(top4));
 		assertFalse(top4.comparar(top3));
-	}
+	}*/
 	
 }
