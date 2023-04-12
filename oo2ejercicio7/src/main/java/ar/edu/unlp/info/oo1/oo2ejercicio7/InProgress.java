@@ -1,15 +1,19 @@
 package ar.edu.unlp.info.oo1.oo2ejercicio7;
 
+import java.time.LocalTime;
+
 public class InProgress extends Estado {
-	public Estado start() {
-		return this;
+	
+	public InProgress(ToDoItem tarea) {
+		super(tarea);
 	}
 	
-	public Estado togglePause() {
-		return new Paused();
+	public void togglePause() {
+		tarea.setState(new Paused(tarea));
 	}
 	
-	public Estado finish() {
-		return new Finished();
+	public void finish() {
+		tarea.setState(new Finished(tarea));
+		this.finish = LocalTime.now();
 	}
 }
