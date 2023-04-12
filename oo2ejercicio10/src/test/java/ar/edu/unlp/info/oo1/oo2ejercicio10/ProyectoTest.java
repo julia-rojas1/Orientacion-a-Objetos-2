@@ -1,4 +1,4 @@
-package ar.edu.unlp.info.oo1.oo2ejercicio9;
+package ar.edu.unlp.info.oo1.oo2ejercicio10;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -7,6 +7,10 @@ import java.time.LocalDate;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unlp.info.oo1.oo2ejercicio10.Confirmada;
+import ar.edu.unlp.info.oo1.oo2ejercicio10.EnEvaluacion;
+import ar.edu.unlp.info.oo1.oo2ejercicio10.Servicio;
 
 public class ProyectoTest {
 	private Servicio servicio;

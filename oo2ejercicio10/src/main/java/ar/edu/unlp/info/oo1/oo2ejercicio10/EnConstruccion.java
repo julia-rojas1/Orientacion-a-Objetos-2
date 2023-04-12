@@ -1,4 +1,4 @@
-package ar.edu.unlp.info.oo1.oo2ejercicio9;
+package ar.edu.unlp.info.oo1.oo2ejercicio10;
 
 public class EnConstruccion extends Etapa {
 	public void aprobada(Proyecto proy, double precio) {
