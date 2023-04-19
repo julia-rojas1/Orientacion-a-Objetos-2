@@ -1,11 +1,5 @@
 package ar.edu.unlp.info.oo1.oo2ejercicio7;
 
-<<<<<<< HEAD
-public abstract class Estado {
-	public abstract Estado start();
-	public abstract Estado togglePause();
-	public abstract Estado finish();
-=======
 import java.time.Duration;
 import java.time.LocalTime;
 
@@ -35,6 +29,6 @@ public class Estado {
 		return Duration.between(start, LocalTime.now());
 	}
 	
->>>>>>> 82194db1251b491462b56be7be47acdd7d60dc6e
+
 	
 }
