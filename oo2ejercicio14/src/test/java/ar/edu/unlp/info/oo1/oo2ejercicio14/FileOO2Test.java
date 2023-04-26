@@ -17,6 +17,6 @@ public class FileOO2Test {
 	
 	@Test
 	void testPrintNombre() {
-		System.out.println(file.mostrarArchivos(0));
+		System.out.println(file.mostrarArchivoPos(0));
 	}
 }

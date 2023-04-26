@@ -14,7 +14,7 @@ public class FileOO2 {
 		archivos.add(a);
 	}
 	
-	public String mostrarArchivos(int i) {
+	public String mostrarArchivoPos(int i) {
 		Archivo a = archivos.get(i);
 		
 		return a.prettyPrint();
