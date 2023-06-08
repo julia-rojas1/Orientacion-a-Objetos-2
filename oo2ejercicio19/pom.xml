@@ -2,7 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+<<<<<<< HEAD
   <groupId>ar.edu.unlp.info.oo2</groupId>
+=======
+  <groupId>ar.edu.unlp.info.oo1</groupId>
+>>>>>>> f90fa25ac8394019398d5d7fc42c72b479242f4c
   <artifactId>oo2ejercicio19</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
