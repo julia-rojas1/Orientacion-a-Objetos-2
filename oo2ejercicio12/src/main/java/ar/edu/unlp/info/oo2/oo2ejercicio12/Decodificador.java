@@ -30,34 +30,9 @@ public class Decodificador {
 	}
 	
 	public List<Pelicula> sugerirPeliculas() {
-		return sugerencia.sugerir(this);
+		return sugerencia.sugerir(peliculas,peliculasReproducidas);
 	}
 	
-	public List<Pelicula> peliculasSinReproducirOrdenadasFecha() {
-		return peliculas.stream()
-				.filter(p -> !peliculasReproducidas.contains(p))
-				.sorted((p1,p2) -> p2.getAñoDeEstreno().compareTo(p1.getAñoDeEstreno()))
-				.collect(Collectors.toList());
-	}
-	
-	public List<Pelicula> peliculasSimilaresAReproducidasOrdenadasFecha() {
-		return peliculasReproducidas.stream()
-				.map(p -> p.getSimiliares())
-				.flatMap(lista -> lista.stream()) //para tener una única lista
-				.distinct() //para eliminar los repetidos
-				.filter(p -> !peliculasReproducidas.contains(p))
-				.sorted((p1,p2) -> p2.getAñoDeEstreno().compareTo(p1.getAñoDeEstreno()))
-				.collect(Collectors.toList());
-		
-	}
-	
-	public List<Pelicula> peliculasMayorPuntajeOrdenadasFecha() {
-		return peliculas.stream()
-				.filter(p -> !peliculasReproducidas.contains(p))
-				.sorted((p1,p2) -> p2.getAñoDeEstreno().compareTo(p1.getAñoDeEstreno()))
-				.sorted((p1,p2) -> Double.compare(p1.getPuntaje(), p2.getPuntaje()))
-				.collect(Collectors.toList());
-	}
 	
 	
 

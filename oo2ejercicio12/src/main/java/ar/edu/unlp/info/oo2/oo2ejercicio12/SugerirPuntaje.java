@@ -5,10 +5,11 @@ import java.util.stream.Collectors;
 
 public class SugerirPuntaje extends EstrategiaSugerir {
 	
-	public  List<Pelicula> sugerir(Decodificador decodificador) {
-		return decodificador.peliculasSimilaresAReproducidasOrdenadasFecha().stream()
-				.limit(3)
-				.collect(Collectors.toList());
+	protected List<Pelicula> ordenar (List<Pelicula> peliculas) {
+		return peliculas.stream()
+			//.sorted((p1,p2) -> Double.compare(p1.getPuntaje(), p2.getPuntaje()).thenCompare(p2.getAñoDeEstreno().compareTo(p1.getAñoDeEstreno())))
+			//Como hago para comparar por dos criterios
+			.collect(Collectors.toList());
 	}
 
 }
